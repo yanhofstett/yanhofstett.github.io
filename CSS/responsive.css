@@ -1,0 +1,120 @@
+/*
+    Auteur: Yann Hofstetter
+    Date: 19.05.2023
+    Description: le responsive diseigne de mon site web
+*/
+
+@media screen and (max-width: 1050px) {
+
+    /*Le style du fond de la page index*/
+    body::after {
+        content: "";
+        background-image: url('../Images/background/2.jpg');
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: blur(0px);
+        z-index: -2;
+    }
+
+    
+    /*Le style du titre de la page index*/
+    #title {
+        text-decoration: underline 3px blue;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .leftImages {
+        text-align: left;
+        margin-left: 10%;
+    }
+
+    .rightImages {
+        text-align: left;
+        margin-left: 10%;
+    }
+
+    .images{
+        width: 150px;
+        z-index: 1;
+    }
+
+    .link {
+        text-decoration: none;
+        color: black;
+    }
+    .menu {
+        display: none;
+      }
+    
+      .menu-icon {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: #000;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+      }
+    
+      .menu-icon:before,
+      .menu-icon:after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    
+      .menu-icon:before {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+    
+      .menu-icon:after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }*/
+    
+    nav {
+        padding: 0 2rem;
+        opacity: 1;
+    }
+
+    nav .nav-list {
+        display: grid;
+        position: absolute;
+        background: #404040;
+        width: 100%;
+        top: 75px;
+        left: 0;
+        transform: translateY(-100%);
+        z-index: 2;
+        transition: .6s;
+    }
+
+    nav .nav-list .nav-link {
+        padding: 27.5px 100px;
+        padding-right: 261px;
+    }
+
+    nav .nav-item .nav-link {
+        opacity: 0;
+    }
+
+    nav .navbar-toggler {
+        z-index: 3;
+    }
+    
+    nav .navbar-toggler {
+        display: grid !important;
+    }
+
+}

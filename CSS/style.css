@@ -1,0 +1,149 @@
+/*
+    Auteur: Yann Hofstetter
+    Date: 19.05.2023
+    Description: tout le CSS du site
+*/
+
+/*c'est pour tout le style des pages*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Le style du fond de la page index*/
+body::after {
+    content: "";
+    background-image: url('../Images/background/2.jpg');
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    z-index: -2;
+}
+
+/*Le style du titre de la page index*/
+#title {
+    text-decoration: underline 5px blue;
+    text-align: center;
+    font-size: 100px;
+    color: blue;
+}
+
+article {
+    color: red;
+    font-size: 30px;
+}
+
+article h3{
+    text-decoration: underline;
+}
+
+.leftImages {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.rightImages {
+    text-align: right;
+    margin-right: 10%;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*le bandeau de navigation*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15%;
+    height: 75px;
+    line-height: 75px;
+    background: #404040;
+    opacity: 0.75;
+}
+
+nav .nav-list {
+    display: flex;
+}
+
+nav .nav-list .nav-item {
+    cursor: pointer;
+    height: 100%;
+    padding: 0;
+    transition: .4s;
+}
+
+nav .nav-list .nav-item:hover {
+    background: #b69955;
+}
+
+nav .nav-list .nav-link {
+    color: #f1f1f1;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 29px 50px;
+}
+
+nav .navbar-toggler {
+    display: none;
+    height: min-content;
+    margin: 18px -10px 0 0;
+    cursor: pointer;
+}
+
+nav .navbar-toggler .bar {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border-radius: 10%;
+    transition: .4s;
+}
+
+input {
+    display: none;
+}
+
+input:checked ~ nav .nav-list .nav-item .nav-link {
+    opacity: 1;
+}
+
+input:checked ~ nav .nav-list {
+    transform: translateY(0);
+}
+
+input:checked ~ nav .navbar-toggler {
+    margin-top: 35px;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
+    display: none;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
+    transform: rotate(-45deg);
+}

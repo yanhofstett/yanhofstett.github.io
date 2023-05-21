@@ -34,6 +34,12 @@
         font-size: 22px;
     }
 
+    .info .hour{
+        color: red;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
     .preparation {
         text-align: center;
         margin-left: 8%;

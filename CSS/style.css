@@ -51,9 +51,17 @@
 }
 
 .info{
-    text-align: center;
+    text-align: left;
     color: white;
     font-size: 22px;
+    margin-left: 22%;
+    margin-right: 22%;
+}
+
+.info .hour{
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .preparation {
@@ -66,8 +74,13 @@
 }
 
 .importantInfo {
-    font-size: 25px;
+    font-size: 30px;
     color: red;
+}
+
+td, th {
+    padding-bottom: 10px; /* Ajoute un espace de 10 pixels en bas */
+    padding-left: 50px;
 }
 
 article {

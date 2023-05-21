@@ -50,6 +50,12 @@
     color: blue;
 }
 
+.info{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
 .preparation {
     text-align: center;
     margin-left: 22%;

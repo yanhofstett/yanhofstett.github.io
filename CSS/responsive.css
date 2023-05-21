@@ -40,6 +40,11 @@
         text-decoration: underline;
     }
 
+    #timetables{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
     .preparation {
         text-align: center;
         margin-left: 8%;
@@ -62,6 +67,11 @@
     .images{
         width: 150px;
         z-index: 1;
+    }
+
+    .map{
+        width: 500px;
+        height: 248;
     }
 
     .link {

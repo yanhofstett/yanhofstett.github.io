@@ -1,8 +1,8 @@
 // Récupérer la date et l'heure actuelles
 var currentDate = new Date();
 
-// Définir la date et l'heure de référence (20 mai 2023 à 8h45)
-var referenceDate = new Date(2023, 4, 21, 18, 30);
+// Définir la date et l'heure de référence (27 mai 2023 à 10h30)
+var referenceDate = new Date(2023, 4, 27, 10, 30);
 
 // Vérifier si la date et l'heure actuelles sont après la date de référence
 if (currentDate > referenceDate) {
